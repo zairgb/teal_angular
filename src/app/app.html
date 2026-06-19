@@ -1,59 +1,9 @@
-<header class="app-header w-full h-fit mb-16 p-4 px-8 text-mist-900 flex items-center justify-between">
-  <!-- App Title -->
-  <div class="app-title-container flex items-center space-x-2">
-    <h1 class="app-title text-4xl text-mist-900 font-bold">teal</h1>
-    <div class="isotipo flex -space-x-2">
-      <div class="w-4 h-4 bg-teal-500/75 rounded-full"></div>
-      <div class="w-4 h-4 mt-1 bg-red-500/75 rounded-full"></div>
-    </div>
-  </div>
-
-  <!-- Navigation -->
-  <nav class="app-nav space-x-4 text-mist-600 text-2xl ">
-    <a routerLink="/" class="nav-link cursor-pointer hover:text-teal-600">Home</a>
-    <a routerLink="/about" class="nav-link cursor-pointer hover:text-teal-600">About</a>
-    <a routerLink="/contact" class="nav-link cursor-pointer hover:text-teal-600">Contact</a>
-  </nav>
-
-  <!-- Theme Toggle Button -->
-  <button class="theme-toggle px-4 py-2 bg-teal-600 text-white text-xl rounded-full cursor-pointer hover:bg-teal-700">Toggle Theme</button>
-</header>
+<app-header></app-header>
 
 <!-- cuerpo -->
-<main class="app-content h-fit mb-4 flex justify-center ">
-
-  <section class="welcome-section w-11/12 max-w-4/5 h-fit rounded-lg flex flex-col gap-16 items-center justify-center text-center mb-8">
-    
-    q<!-- articulo de bienbenida -->
-    <article class="welcome-article flex flex-col items-center gap-2">
-      <h2 class="welcome-title text-6xl text-mist-900 font-black uppercase">Frontend</h2>
-      <h3 class="welcome-subtitle text-6xl text-teal-600 font-black uppercase">angular</h3>
-      <p class="welcome-description w-3/4 text-mist-600 text-3xl font-mono mt-4">
-        Desarrollo de una aplicación web moderna utilizando Angular, enfocada en ofrecer una interfaz intuitiva, alto rendimiento y una experiencia de usuario fluida.
-      </p>
-    </article>
-
-    <hr class="w-full border-b-2 border-teal-600">
-
-    <!-- articulo video -->
-    <article class="w-3/4 bg-mist-100 rounded-4xl flex items-center justify-center p-8">
-      <video class="w-3/4 h-auto" autoplay muted loop controls >
-        <source src="" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </article>
-
-    <!-- articulo final -->
-    <article class="try-section flex flex-col items-center gap-4">
-      <p class="try-text text-2xl text-mist-700">¿Listo para probar la página? ¡Haz clic abajo y compruébalo!</p>
-      <a routerLink="/" class="try-button px-6 py-3 bg-teal-600 text-white rounded-full text-2xl hover:bg-teal-700 cursor-pointer">Probar página</a>
-    </article>
-  </section>
-
+<app-main>
   <router-outlet></router-outlet>
-</main>
+</app-main>
 
 <!-- pie de pagina -->
-<footer class="app-footer bg-secondary w-11/12 max-w-4/5 h-16 mx-auto mt-4 p-4 text-mist-600 text-center">
-  <p>&copy; 2024 My Angular App. All rights reserved.</p>
-</footer>
+<app-footer></app-footer>

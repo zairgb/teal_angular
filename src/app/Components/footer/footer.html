@@ -1,3 +1,52 @@
-<footer class="app-footer bg-secondary w-11/12 max-w-4/5 h-16 mx-auto mt-4 p-4 text-mist-600 text-center">
+<footer class="app-footer bg-secondary w-11/12 max-w-4/5 h-1/6 mx-auto mt-4 p-4 text-mist-600 text-center flex flex-col items-center justify-between gap-8">
+    <hr class="w-full border-t border-mist-300 mb-4">
+
+    <!-- Social Links and Info -->
+    <section class="social-links w-full flex space-x-4">
+        <article class="w-1/4 flex flex-col items-start space-y-2">
+            <div class="app-title-container flex items-center space-x-2">
+                <h1 class="app-title text-4xl text-mist-900 font-bold">teal</h1>
+                <div class="isotipo flex -space-x-2">
+                    <div class="w-4 h-4 bg-teal-500/75 rounded-full"></div>
+                    <div class="w-4 h-4 mt-1 bg-red-500/75 rounded-full"></div>
+                </div>
+            </div>
+            <p class="text-sm text-mist-600">Follow us on social media!</p>
+            <p class="text-sm text-mist-600">Email: info@tealapp.com</p>
+            <p class="text-sm text-mist-600">&copy; 2024 My Angular App.</p>
+        </article>
+
+        <!-- Quick Links -->
+        <article class="w-1/4 flex flex-col items-start space-y-2">
+            <h2 class="text-2xl font-bold text-mist-900">Quick Links</h2>
+
+            <a routerLink="/" class="text-mist-600 hover:text-teal-500 cursor-pointer transition">Home</a>
+            <a routerLink="/productos" class="text-mist-600 hover:text-teal-500 cursor-pointer transition">Productos</a>
+            <a routerLink="/about" class="text-mist-600 hover:text-teal-500 cursor-pointer transition">About Us</a>
+            <a routerLink="/contacto" class="text-mist-600 hover:text-teal-500 cursor-pointer transition">Contact</a>
+        </article>
+
+        <!-- General Links -->
+        <article class="w-1/4 flex flex-col items-start space-y-2">
+            <h2 class="text-2xl font-bold text-mist-900">General</h2>
+
+            <a class="hover:text-teal-500 cursor-pointer transition">Notice</a>
+            <a class="hover:text-teal-500 cursor-pointer transition">License</a>
+            <a class="hover:text-teal-500 cursor-pointer transition">Press Inquiry</a>
+            <a class="hover:text-teal-500 cursor-pointer transition">Press Images</a>
+        </article>
+
+        <!-- Newsletter Subscription -->
+        <article class="w-1/4 flex flex-col items-start space-y-2">
+            <h2 class="text-2xl font-bold text-mist-900">Newsletter</h2>
+
+            <p class="text-sm text-mist-600">Subscribe to our newsletter for the latest updates.</p>
+            <form action="#" method="post" class="flex gap-2">
+                <input type="email" placeholder="Your Email" class="pl-4 bg-white text-mist-600 placeholder:text-mist-400 border rounded-tl-full rounded-bl-full border-mist-300 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                <button type="submit" class="bg-teal-500 text-white hover:bg-teal-600 py-2 px-4 rounded-md">Subscribe</button>
+            </form>
+        </article>
+    </section>
+
     <p>&copy; 2024 My Angular App. All rights reserved.</p>
 </footer>
